@@ -1,0 +1,31 @@
+.button {
+  -webkit-transition: background-color 250ms var(--timing-function);
+  -o-transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function);
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
+  border: none;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-button-color);
+  }
+  &--submit {
+    display: flex;
+  }
+  &--submit__send {
+    margin-left: 9px;
+  }
+}

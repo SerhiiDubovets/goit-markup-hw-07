@@ -2,11 +2,13 @@
   --primary-text-color: #212121;
   --title-text-color: #757575;
   --accent-color: #2196f3;
-  --hover-hero-button-color: #058cf7;
+  --hover-button-color: #058cf7;
 
   --primary-font: Roboto, sans-serif;
   --secondary-font: Raleway, sans-serif;
   --icon-color: #afb1b8;
+
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -90,7 +92,7 @@ img {
 
 .site-nav-link {
   position: relative;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--timing-function);
 
   display: block;
   padding-top: 32px;
@@ -144,7 +146,7 @@ img {
 }
 
 .auth-nav-link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--timing-function);
 
   display: flex;
   align-items: center;
@@ -159,7 +161,7 @@ img {
 }
 
 .icon-envelope {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms var(--timing-function);
 
   margin-right: 10px;
   width: 16px;
@@ -177,7 +179,7 @@ img {
 }
 
 .icon-smartphone {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms var(--timing-function);
 
   margin-right: 10px;
   width: 10px;
@@ -205,7 +207,7 @@ img {
 }
 
 .hero-button {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--timing-function);
 
   border-radius: 4px;
   padding: 10px 32px;
@@ -225,7 +227,7 @@ img {
 }
 .hero-button:hover,
 .hero-button:focus {
-  background-color: var(--hover-hero-button-color);
+  background-color: var(--hover-button-color);
 }
 
 .hero-title {
@@ -251,7 +253,7 @@ img {
   top: 0;
   width: 100%;
   height: 100%;
-  transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 350ms var(--timing-function);
 
   z-index: 10;
 
@@ -284,7 +286,7 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
-  transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 350ms var(--timing-function);
 
   display: flex;
   width: 30px;
@@ -337,7 +339,7 @@ img {
 }
 
 .form-input {
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms var(--timing-function);
 
   padding-right: 10px;
   padding-left: 42px;
@@ -360,14 +362,14 @@ img {
 
 .form-svg {
   position: absolute;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms var(--timing-function);
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .form-button {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--timing-function);
 
   border-radius: 4px;
   padding: 10px 32px;
@@ -388,12 +390,12 @@ img {
 
 .form-button:hover,
 .form-button:focus {
-  background-color: var(--hover-hero-button-color);
+  background-color: var(--hover-button-color);
 }
 
 .form-comment {
   resize: none;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms var(--timing-function);
 
   height: 120px;
   padding: 12px 16px;
@@ -450,7 +452,7 @@ img {
   width: 16px;
   height: 15px;
   margin-right: 8px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--timing-function);
 }
 
 .checkbox:checked + .condition-icon {
@@ -660,7 +662,7 @@ img {
 }
 
 .icon-link {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--timing-function);
 
   display: flex;
   width: 44px;
@@ -676,7 +678,7 @@ img {
 }
 
 .icon-svg {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms var(--timing-function);
 
   width: 20px;
   fill: var(--icon-color);
@@ -700,7 +702,7 @@ img {
 }
 
 .client-link {
-  transition: border 250ms lcubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms var(--timing-function);
 
   width: 170px;
   height: 92px;
@@ -717,7 +719,7 @@ img {
 }
 
 .client-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms var(--timing-function);
 
   fill: var(--icon-color);
 }
@@ -778,7 +780,7 @@ img {
 }
 
 .address-link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--timing-function);
 
   display: block;
 
@@ -819,7 +821,7 @@ img {
 }
 
 .connect-link {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--timing-function);
 
   display: flex;
   width: 44px;
@@ -849,7 +851,7 @@ img {
 }
 
 .subscription-input {
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms var(--timing-function);
 
   padding: 15px 16px;
   margin-right: 12px;
@@ -862,7 +864,7 @@ img {
 }
 
 .subscription-button {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--timing-function);
 
   border-radius: 4px;
   padding: 10px 32px;
@@ -884,7 +886,7 @@ img {
 
 .subscription-button:hover,
 .subscription-button:focus {
-  background-color: var(--hover-hero-button-color);
+  background-color: var(--hover-button-color);
 }
 
 .subscription-send {
@@ -893,8 +895,8 @@ img {
 
 .subscription-input:focus,
 .subscription-input:hover {
-  border-color: var(--hover-hero-button-color);
-  outline-color: var(--hover-hero-button-color);
+  border-color: var(--hover-button-color);
+  outline-color: var(--hover-button-color);
 }
 
 /* ====================== ПОРТФОЛИО ======================*/
@@ -938,9 +940,8 @@ img {
   line-height: 1.63;
   text-align: center;
   cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 
 .filter-button:hover,
@@ -961,7 +962,7 @@ img {
 .gallery-lists {
   display: block;
   text-decoration: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms var(--timing-function);
 }
 
 .gallery-lists:hover,
@@ -1025,7 +1026,7 @@ img {
   width: 100%;
   height: 100%;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--timing-function);
 
   background-color: rgba(33, 150, 243, 0.9);
 
