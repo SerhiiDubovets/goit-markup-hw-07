@@ -29,3 +29,26 @@
     margin-left: 9px;
   }
 }
+
+.button-close {
+  top: 8px;
+  right: 8px;
+  transition: fill 350ms var(--timing-function);
+
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--icon-color);
+  align-items: center;
+  justify-content: center;
+
+  background-color: #fff;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
