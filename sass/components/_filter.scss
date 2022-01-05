@@ -5,17 +5,17 @@
 .filter {
   display: flex;
   justify-content: center;
-  &__item {
-    margin-right: 8px;
-    align-items: center;
-    &:last-child {
-      margin-right: 0px;
-    }
+}
+
+.filter__item {
+  margin-right: 8px;
+  align-items: center;
+  &:last-child {
+    margin-right: 0px;
   }
 }
 
-/* Контент фильтра */
-.filter-button {
+.filter__button {
   border-radius: 4px;
   padding: 6px 22px;
   border: none;
